@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
-    tools:context=".fragments.add.addFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.update.UpdateFragment">
+
 
     <EditText
-        android:id="@+id/addFirstName_et"
+        android:id="@+id/updateFirstName_et"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -23,7 +24,7 @@
         app:layout_constraintVertical_bias="0.06" />
 
     <EditText
-        android:id="@+id/addLastName_et"
+        android:id="@+id/updateLastName_et"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -31,13 +32,13 @@
         android:hint="Last Name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/addFirstName_et"
+        app:layout_constraintEnd_toEndOf="@+id/updateFirstName_et"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/addFirstName_et"
-        app:layout_constraintTop_toBottomOf="@+id/addFirstName_et" />
+        app:layout_constraintStart_toStartOf="@+id/updateFirstName_et"
+        app:layout_constraintTop_toBottomOf="@+id/updateFirstName_et" />
 
     <EditText
-        android:id="@+id/addAge_et"
+        android:id="@+id/updateAge_et"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -45,20 +46,20 @@
         android:hint="Age"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/addLastName_et"
+        app:layout_constraintEnd_toEndOf="@+id/updateLastName_et"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/addLastName_et"
-        app:layout_constraintTop_toBottomOf="@+id/addLastName_et" />
+        app:layout_constraintStart_toStartOf="@+id/updateLastName_et"
+        app:layout_constraintTop_toBottomOf="@+id/updateLastName_et" />
 
     <Button
-        android:id="@+id/add_btn"
+        android:id="@+id/update_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:text="Add"
-        app:layout_constraintEnd_toEndOf="@+id/addAge_et"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="@+id/updateAge_et"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/addAge_et"
-        app:layout_constraintTop_toBottomOf="@+id/addAge_et" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintStart_toStartOf="@+id/updateAge_et"
+        app:layout_constraintTop_toBottomOf="@+id/updateAge_et" />
 
+</androidx.constraintlayout.widget.ConstraintLayout>
